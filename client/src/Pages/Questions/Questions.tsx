@@ -1,16 +1,13 @@
-import React, {FC} from 'react';
+import React, { FC } from 'react'
+import style from './Questions.module.sass'
+import NameQuestion from './components/NameQuestion'
 
-interface QuestionsProps{
-    questions: string[],
-    link: string
+const Questions:FC = () => {
+	return (
+		<div className={style['slider-container']}>
+			<NameQuestion/>
+		</div>
+	)
 }
 
-const Questions:FC<QuestionsProps> = ({}) => {
-    return (
-        <div>
-
-        </div>
-    );
-};
-
-export default Questions;
+export default Questions
